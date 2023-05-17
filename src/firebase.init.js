@@ -6,12 +6,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA_ffoFiLyDQ1OotxDFaFLJl3hFRRdIDWs",
-  authDomain: "islams-tools-shop.firebaseapp.com",
-  projectId: "islams-tools-shop",
-  storageBucket: "islams-tools-shop.appspot.com",
-  messagingSenderId: "990424208805",
-  appId: "1:990424208805:web:6378df29131dd0b966444c"
+  apiKey: "AIzaSyAw2IZW9tnj6EMxS7P_okXJ9AQ53SuY61g",
+  authDomain: "tools-shop-3124a.firebaseapp.com",
+  projectId: "tools-shop-3124a",
+  storageBucket: "tools-shop-3124a.appspot.com",
+  messagingSenderId: "871852192271",
+  appId: "1:871852192271:web:162830b1985d051b11e97a"
 };
 
 // Initialize Firebase

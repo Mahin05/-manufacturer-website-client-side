@@ -1,0 +1,148 @@
+[debug] [2023-05-17T16:09:12.225Z] ----------------------------------------------------------------------
+[debug] [2023-05-17T16:09:12.229Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-17T16:09:12.230Z] CLI Version:   12.0.1
+[debug] [2023-05-17T16:09:12.231Z] Platform:      win32
+[debug] [2023-05-17T16:09:12.231Z] Node Version:  v16.15.0
+[debug] [2023-05-17T16:09:12.233Z] Time:          Wed May 17 2023 22:09:12 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-05-17T16:09:12.234Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-17T16:09:12.421Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-17T16:09:12.423Z] > authorizing via signed-in user (mahin.islam05@gmail.com)
+[debug] [2023-05-17T16:09:12.423Z] [iam] checking project islams-tools-shop for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-17T16:09:12.427Z] > refreshing access token with scopes: []
+[debug] [2023-05-17T16:09:12.430Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-17T16:09:12.431Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:09:12.962Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-05-17T16:09:12.962Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:09:12.963Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions [none]
+[debug] [2023-05-17T16:09:12.963Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions x-goog-quota-user=projects/islams-tools-shop
+[debug] [2023-05-17T16:09:12.964Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-17T16:09:14.705Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions 401
+[debug] [2023-05-17T16:09:14.705Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"cloudresourcemanager.googleapis.com","method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions"}}]}}
+[debug] [2023-05-17T16:09:14.707Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-05-17T16:09:14.708Z] > refreshing access token with scopes: []
+[debug] [2023-05-17T16:09:14.709Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-17T16:09:14.709Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:09:15.098Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-05-17T16:09:15.098Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:09:15.100Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/islams-tools-shop [none]
+[debug] [2023-05-17T16:09:15.721Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/islams-tools-shop 401
+[debug] [2023-05-17T16:09:15.721Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/islams-tools-shop {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-05-17T16:09:15.722Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-05-17T16:09:16.116Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project islams-tools-shop. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-05-17T16:18:33.097Z] ----------------------------------------------------------------------
+[debug] [2023-05-17T16:18:33.101Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-17T16:18:33.102Z] CLI Version:   12.0.1
+[debug] [2023-05-17T16:18:33.102Z] Platform:      win32
+[debug] [2023-05-17T16:18:33.103Z] Node Version:  v16.15.0
+[debug] [2023-05-17T16:18:33.119Z] Time:          Wed May 17 2023 22:18:33 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-05-17T16:18:33.119Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-17T16:18:33.306Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-17T16:18:33.307Z] > authorizing via signed-in user (mahin.islam05@gmail.com)
+[debug] [2023-05-17T16:18:33.307Z] [iam] checking project islams-tools-shop for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-17T16:18:33.313Z] > refreshing access token with scopes: []
+[debug] [2023-05-17T16:18:33.317Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-17T16:18:33.317Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:18:33.895Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-05-17T16:18:33.895Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:18:33.896Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions [none]
+[debug] [2023-05-17T16:18:33.896Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions x-goog-quota-user=projects/islams-tools-shop
+[debug] [2023-05-17T16:18:33.897Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-17T16:18:35.820Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions 401
+[debug] [2023-05-17T16:18:35.820Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"cloudresourcemanager.googleapis.com","method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions"}}]}}
+[debug] [2023-05-17T16:18:35.822Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-05-17T16:18:35.823Z] > refreshing access token with scopes: []
+[debug] [2023-05-17T16:18:35.824Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-17T16:18:35.824Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:18:36.212Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-05-17T16:18:36.213Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:18:36.214Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/islams-tools-shop [none]
+[debug] [2023-05-17T16:18:36.854Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/islams-tools-shop 401
+[debug] [2023-05-17T16:18:36.855Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/islams-tools-shop {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-05-17T16:18:36.855Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-05-17T16:18:37.384Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project islams-tools-shop. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-05-17T16:19:13.206Z] ----------------------------------------------------------------------
+[debug] [2023-05-17T16:19:13.210Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-17T16:19:13.211Z] CLI Version:   12.0.1
+[debug] [2023-05-17T16:19:13.212Z] Platform:      win32
+[debug] [2023-05-17T16:19:13.212Z] Node Version:  v16.15.0
+[debug] [2023-05-17T16:19:13.215Z] Time:          Wed May 17 2023 22:19:13 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-05-17T16:19:13.216Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-17T16:19:13.458Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-17T16:19:13.459Z] > authorizing via signed-in user (mahin.islam05@gmail.com)
+[debug] [2023-05-17T16:19:13.460Z] [iam] checking project islams-tools-shop for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-17T16:19:13.465Z] > refreshing access token with scopes: []
+[debug] [2023-05-17T16:19:13.470Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-17T16:19:13.471Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:19:14.125Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-05-17T16:19:14.125Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:19:14.126Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions [none]
+[debug] [2023-05-17T16:19:14.126Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions x-goog-quota-user=projects/islams-tools-shop
+[debug] [2023-05-17T16:19:14.126Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-17T16:19:15.899Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions 401
+[debug] [2023-05-17T16:19:15.900Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2023-05-17T16:19:15.902Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-05-17T16:19:15.903Z] > refreshing access token with scopes: []
+[debug] [2023-05-17T16:19:15.903Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-17T16:19:15.904Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:19:16.725Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-05-17T16:19:16.725Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:19:16.727Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/islams-tools-shop [none]
+[debug] [2023-05-17T16:19:17.373Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/islams-tools-shop 401
+[debug] [2023-05-17T16:19:17.373Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/islams-tools-shop {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-05-17T16:19:17.374Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-05-17T16:19:17.902Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project islams-tools-shop. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-05-17T16:22:09.947Z] ----------------------------------------------------------------------
+[debug] [2023-05-17T16:22:09.952Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --project islams-tools-shop
+[debug] [2023-05-17T16:22:09.953Z] CLI Version:   12.0.1
+[debug] [2023-05-17T16:22:09.954Z] Platform:      win32
+[debug] [2023-05-17T16:22:09.954Z] Node Version:  v16.15.0
+[debug] [2023-05-17T16:22:09.969Z] Time:          Wed May 17 2023 22:22:09 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-05-17T16:22:09.969Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-17T16:22:10.172Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-17T16:22:10.173Z] > authorizing via signed-in user (mahin.islam05@gmail.com)
+[debug] [2023-05-17T16:22:10.174Z] [iam] checking project islams-tools-shop for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-17T16:22:10.179Z] > refreshing access token with scopes: []
+[debug] [2023-05-17T16:22:10.183Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-17T16:22:10.183Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:22:10.807Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-05-17T16:22:10.808Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:22:10.809Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions [none]
+[debug] [2023-05-17T16:22:10.809Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions x-goog-quota-user=projects/islams-tools-shop
+[debug] [2023-05-17T16:22:10.809Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-17T16:22:12.478Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions 401
+[debug] [2023-05-17T16:22:12.479Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/islams-tools-shop:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2023-05-17T16:22:12.480Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-05-17T16:22:12.481Z] > refreshing access token with scopes: []
+[debug] [2023-05-17T16:22:12.482Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-17T16:22:12.482Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:22:12.887Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-05-17T16:22:12.887Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T16:22:12.889Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/islams-tools-shop [none]
+[debug] [2023-05-17T16:22:13.661Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/islams-tools-shop 401
+[debug] [2023-05-17T16:22:13.661Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/islams-tools-shop {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-05-17T16:22:13.661Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-05-17T16:22:14.115Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project islams-tools-shop. Please make sure the project exists and your account has permission to access it.
