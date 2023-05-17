@@ -8,7 +8,7 @@ const Review = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `https://infinite-island-68376.herokuapp.com/review`;
+        const url = `https://manufacturer-website-server-side-zd8v.onrender.com/review`;
         fetch(url, {
             method: 'POST',
             headers: {

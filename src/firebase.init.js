@@ -6,12 +6,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey:process.env.REACT_APP_APIKEY,
-  authDomain:process.env.REACT_APP_AUTHDOMAIN,
-  projectId:process.env.REACT_APP_PROJECTID,
-  storageBucket:process.env.REACT_APP_STORAGEBUCKET,
-  messagingSenderId:process.env.REACT_APP_MESSAGINGSENDERID,
-  appId:process.env.REACT_APP_APPID,
+  apiKey: "AIzaSyA_ffoFiLyDQ1OotxDFaFLJl3hFRRdIDWs",
+  authDomain: "islams-tools-shop.firebaseapp.com",
+  projectId: "islams-tools-shop",
+  storageBucket: "islams-tools-shop.appspot.com",
+  messagingSenderId: "990424208805",
+  appId: "1:990424208805:web:6378df29131dd0b966444c"
 };
 
 // Initialize Firebase

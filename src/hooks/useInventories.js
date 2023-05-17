@@ -4,7 +4,7 @@ const useInventories = () => {
 
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('https://infinite-island-68376.herokuapp.com/manageInventory')
+        fetch('https://manufacturer-website-server-side-zd8v.onrender.com/manageInventory')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])

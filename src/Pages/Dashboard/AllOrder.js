@@ -4,14 +4,15 @@ import { Link } from 'react-router-dom';
 const AllOrder = () => {
     const [allOrder, setAllOrder] = useState([]);
     useEffect(() => {
-        fetch('https://infinite-island-68376.herokuapp.com/allorders')
+        fetch('https://manufacturer-website-server-side-zd8v.onrender.com/allorders')
             .then(res => res.json())
             .then(data => setAllOrder(data))
     }, [])
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure want to delete?');
         if (proceed) {
-            const url = `https://infinite-island-68376.herokuapp.com/cancel/${id}`
+            // https://infinite-island-68376.herokuapp.com
+            const url = `https://manufacturer-website-server-side-zd8v.onrender.com/cancel/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -28,7 +29,7 @@ const AllOrder = () => {
         const shipped="shipped";
         const proceed = window.confirm('Are you sure want to Ship?');
         if (proceed) {
-            const url = `https://infinite-island-68376.herokuapp.com/shipped/${id}`
+            const url = `https://manufacturer-website-server-side-zd8v.onrender.com/shipped/${id}`
             fetch(url, {
                 method: 'PUT',
                 headers: {

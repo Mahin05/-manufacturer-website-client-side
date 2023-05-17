@@ -19,7 +19,7 @@ const Profile = () => {
             phone:event.target.phone.value,
             linkedIn:event.target.linkedIn.value
         }
-        fetch('https://infinite-island-68376.herokuapp.com/userInfo',{
+        fetch('https://manufacturer-website-server-side-zd8v.onrender.com/userInfo',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

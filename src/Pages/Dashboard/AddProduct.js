@@ -9,7 +9,7 @@ const AddProduct = () => {
     const [user] = useAuthState(auth);
     const onSubmit = data => {
         console.log(data);
-        const url = `https://infinite-island-68376.herokuapp.com/tools`;
+        const url = `https://manufacturer-website-server-side-zd8v.onrender.com/tools`;
         fetch(url, {
             method: 'POST',
             headers: {

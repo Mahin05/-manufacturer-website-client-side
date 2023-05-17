@@ -13,7 +13,7 @@ const CheckoutForm = ({order}) => {
   const {_id,userName,pricePerunit,email}=order;
 
   useEffect(()=>{
-    fetch('https://infinite-island-68376.herokuapp.com/create-payment-intent',{
+    fetch('https://manufacturer-website-server-side-zd8v.onrender.com/create-payment-intent',{
       method: 'POST',
       headers: {
         'content-type': 'application/json',
@@ -75,7 +75,7 @@ const CheckoutForm = ({order}) => {
         order: _id,
         transactionId: paymentIntent.id
     }
-      fetch(`https://infinite-island-68376.herokuapp.com/booking/${_id}`,{
+      fetch(`https://manufacturer-website-server-side-zd8v.onrender.com/booking/${_id}`,{
         method: 'PATCH',
         headers: {
             'content-type': 'application/json',

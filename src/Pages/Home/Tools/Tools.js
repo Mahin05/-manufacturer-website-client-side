@@ -6,7 +6,7 @@ import './Tools.css'
 const Tools = () => {
     const [tools, setTools] = useState([]);
     useEffect(() => {
-        fetch('https://infinite-island-68376.herokuapp.com/tools')
+        fetch('https://manufacturer-website-server-side-zd8v.onrender.com/tools')
             .then(res => res.json())
             .then(data => setTools(data))
     }, [])
